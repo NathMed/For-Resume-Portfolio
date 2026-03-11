@@ -252,24 +252,24 @@
       <!-- Map -->
       <div class="col-11 col-lg-5 mb-4 mb-lg-0">
         <div class="ratio ratio-4x3 shadow rounded">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.867668690057!2d120.9803878759038!3d14.54955907832264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cb006d580d4b%3A0x9c26bfec3a729c8e!2sDiwata%20Pares%20Overload%20Pasay!5e0!3m2!1sen!2sph!4v1772567438250!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021.8536510890694!2d121.08098412987233!3d14.768713297554932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a5b66dd73db7%3A0xebcec70186c75658!2sMetroplaza%20Mall!5e0!3m2!1sen!2sph!4v1773250622433!5m2!1sen!2sph" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
       <!-- Form -->
       <div class="col-12 col-lg-5 mt-lg-5 pt-lg-5">
-        <form>
+        <form action="https://formspree.io/f/xnjgdzbd" method="POST" target="_blank">
           <div class="mb-3">
-              <input id="name" type="text" class="form-control rounded-pill"placeholder="First Name MI Last Name" required>
+            <input id="name" name="name" type="text" class="form-control rounded-pill"placeholder="First Name MI Last Name" required>
           </div>
 
           <div class="mb-3">
-            <input type="email" class="form-control rounded-pill"
+            <input type="email" name="email" class="form-control rounded-pill"
               placeholder="Email" required>
           </div>
 
           <div class="mb-3">
-            <textarea class="form-control rounded-4"
+            <textarea class="form-control rounded-4" name="message"
               rows="5"
               placeholder="Message"></textarea>
           </div>
@@ -277,8 +277,10 @@
           <!-- Icons -->
           <div class="mb-3 d-flex gap-3 fs-2">
             <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://mail.google.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/NathMed" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+<!-- not working -->
+            <a href="mailto:thaniel.mdn@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
           </div>
 
           <!-- Button -->
@@ -288,14 +290,30 @@
               Submit
             </button>
           </div>
+        </form>
+
+<!-- not working -->
           <div class="text-end my-5">
-            <button formaction="https://google.com" type="submit" 
-              class="btn text-light px-4 rounded-pill">
+            <a href="mailto:yourgmail@gmail.com?subject=Request%20for%20Resume"
+              class="text-dark px-4 rounded-pill" target="_blank">
               Request a Resume
-            </button>
+            </a>
           </div>
 
-        </form>
+          <!-- possible to use formspree for request but need to modify the placement-->
+          
+          <!-- <form action="https://formspree.io/f/mojkdnap" method="POST">
+            <input type="hidden" name="message" value="Someone requested your resume">
+            <button type="submit" class="btn text-light px-4 rounded-pill">
+              Request a Resume
+            </button>
+          </form> -->
+
+          <!-- or this one, but need to modify the placement -->
+          <!-- <a href="https://drive.google.com/file/d/1YZxYA1Cr-D3YhzXmbat_MLo9UckFdL6g/view?usp=sharing" target="_blank" class="btn text-light px-4 rounded-pill">
+             View Resume
+          </a>
+ -->
       </div>
     </div>
   </div>
